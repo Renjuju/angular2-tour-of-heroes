@@ -4,14 +4,12 @@ import { OnInit } from '@angular/core';
 
 export class Hero {
   id: number;
-  name: string;
+  name: String;
 }
 
 @Component({
   selector: 'my-heroes',
   template:`
-    <h1>{{title}}</h1>
-    <h2>My Heroes</h2>
     <ul class="heroes">
       <li *ngFor="let hero of heroes"
       [class.selected]="hero === selectedHero"
